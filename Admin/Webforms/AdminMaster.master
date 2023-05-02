@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_Webforms_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../CSS/AdminCss.css" rel="stylesheet" />
+</head>
+<body style="background-image: url(http://localhost:6290/Admin/Images/background2.png)">
+    <form id="form1" runat="server">
+     <table style="width:100%;">
+            <tr>
+                <td> 
+                    <table style="width:100%;">
+                        <tr>
+                            <td colspan="2" style="text-align:right;">
+                                <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="btn" PostBackUrl="~/Client/Webforms/Home.aspx"/>&nbsp;
+                                       
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:200px; height:100px;">
+                                <asp:Image ID="imgLogo" runat="server" Width="261px"
+                                     Height="100px" ImageUrl="~/Admin/Images/p1.jpg" />
+                                
+                            </td>
+                            <td style="font-family:'Monotype Corsiva';font-size:60px;
+                                  color:black;text-align:center;font-weight:900">
+                            THE <span style="color:forestgreen">GREEN</span> CANTEEN
+                            </td>
+                        </tr>
+                        <tr style="height:5px;">
+                            <td colspan="2" style="background-color:blue;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr style="height:25px;">
+                            <td colspan="2" style="background-color:blue;">
+                        <table class="txt" style="width:100%;">
+                            <tr>
+                               <td style="text-align:left;width:100px;">
+                                   <asp:Button ID="Button1" runat="server" Text="UPDATE MENU" width="200px" PostBackUrl="~/Admin/Webforms/UpdateMenu.aspx" CssClass="btn" />
+                                   
+                               </td>
+                                <td style="text-align:left;width:100px;">
+                                   <asp:Button ID="Button2" runat="server" Text="VIEW ORDERS" width="200px" PostBackUrl="~/Admin/Webforms/ViewOrders.aspx" CssClass="btn" />
+                                   
+                               </td>
+                                <td style="text-align:left;width:100px;">
+                                   <asp:Button ID="Button3" runat="server" Text="BILL" width="200px" CssClass="btn" PostBackUrl="~/Admin/Webforms/Bill.aspx" />
+                                   
+                               </td>
+                                
+                           </tr>
+
+                        </table>
+                                </td>
+                            </tr>
+                        <tr >
+                            <td colspan="2">
+                                <table style="width:100%;">
+                                    <tr> 
+                                        <td style="width:20%;"></td>
+                                        <td>
+                                            <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                
+        </asp:ContentPlaceHolder>
+                                              </div>
+                                            </td>
+                                    </tr>
+                                    
+                                    </table>
+                            </td>
+                        </tr>
+                       </table>  
+                </td>
+            </tr>
+            </table>
+   
+    </form>
+</body>
+</html>
